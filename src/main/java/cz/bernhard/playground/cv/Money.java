@@ -28,7 +28,6 @@ public class Money {
 		return amount.getAmount() + " " + currency.getCurrencyCode();
 	}
 	
-	@ToString
 	@Data
 	public static class Amount {
 		

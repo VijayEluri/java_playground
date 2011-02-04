@@ -40,6 +40,11 @@ public class PerfectNumber {
 		return perfectNumbers;
 	}
 
+	/**
+	 * @param number
+	 * @return if it is perfect number (= perfect number is a number which is equal to
+	 * sum of its dividers eg. 6 = 3+2+1)
+	 */
 	private static boolean isPerfectNumber(int number) {
 		
 		List<Integer> dividers = findDividers(number);		
