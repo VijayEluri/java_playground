@@ -1,7 +1,6 @@
 package cz.bernhard.playground;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class PerfectNumber {
