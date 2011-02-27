@@ -3,6 +3,13 @@ package cz.bernhard.playground;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * Perfect number is a number which is equal to sum of its dividers eg. 6 = 3+2+1)
+ * 
+ * @author Michal Bernhard (michal@bernhard.cz)
+ *
+ */
 public class PerfectNumber {
 
 	private static final int LIMIT = 10000;
