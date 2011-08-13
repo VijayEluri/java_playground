@@ -1,4 +1,3 @@
-package cz.bernhard.playground;
 import org.junit.rules.TestWatchman;
 import org.junit.runners.model.FrameworkMethod;
 

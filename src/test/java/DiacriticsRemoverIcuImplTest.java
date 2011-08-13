@@ -1,6 +1,5 @@
-package cz.bernhard.playground;
-
-
+import cz.bernhard.playground.DiacriticsRemover;
+import cz.bernhard.playground.DiacriticsRemoverIcuImpl;
 
 public class DiacriticsRemoverIcuImplTest extends DiacriticsRemoverTest {
 
@@ -8,8 +7,5 @@ public class DiacriticsRemoverIcuImplTest extends DiacriticsRemoverTest {
     protected DiacriticsRemover getDiacriticsRemover() {
         return new DiacriticsRemoverIcuImpl();
     }
-    
-  
-    
-  
+
 }
