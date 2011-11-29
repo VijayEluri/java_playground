@@ -5,6 +5,12 @@ import java.math.BigDecimal;
 import lombok.Data;
 import lombok.ToString;
 
+/**
+ * You need to have installed Project Lombok otherwise it has compilation errors.
+ * 
+ * @author mbernhard
+ *
+ */
 public class Money {
 
 	private final Amount amount;
@@ -25,7 +31,7 @@ public class Money {
 
 	@Override
 	public String toString() {
-		return amount.getAmount() + " " + currency.getCurrencyCode();
+		return amount.getAmount() + " " + currency.getCurrencyCode(); // if your ide show error here it's because you haven't got Project Lombok installed
 	}
 	
 	@Data
