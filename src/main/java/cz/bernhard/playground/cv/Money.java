@@ -29,10 +29,10 @@ public class Money {
 		return forCzech(new BigDecimal(amount));
 	}
 
-	@Override
-	public String toString() {
-		return amount.getAmount() + " " + currency.getCurrencyCode(); // if your ide show error here it's because you haven't got Project Lombok installed
-	}
+//	@Override
+//	public String toString() {
+//		return amount.getAmount() + " " + currency.getCurrencyCode(); // if your ide show error here it's because you haven't got Project Lombok installed
+//	}
 	
 	@Data
 	public static class Amount {
