@@ -2,18 +2,16 @@ package cz.bernhard.playground.cv;
 
 import org.apache.commons.lang.builder.StandardToStringStyle;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 public class Contact {
 
 	private String email;
-	private String icq;
 	private String blogUrl;
+	private String twitterUrl;
+	private String githubUrl;
 
-	public Contact icq(String icq) {		
-		this.icq = icq;
-		return this;
-	}
-	
+		
 	public Contact blog(String blogUrl) {
 		this.blogUrl = blogUrl;
 		return this;		
@@ -22,6 +20,16 @@ public class Contact {
 	public Contact email(String email) {
 		this.email = email;
 		return this;		
+	}
+
+	public Contact twitter(String twitterUrl) {
+		this.twitterUrl = twitterUrl;
+		return this;
+	}
+
+	public Contact github(String githubUrl) {
+		this.githubUrl = githubUrl;
+		return this;
 	}
 	
 	@Override
@@ -38,19 +46,22 @@ public class Contact {
 		 * to move lines...
 		 **/
 		tsb.append("Email", email);
+		tsb.append("Twitter", twitterUrl);
+		tsb.append("Github", githubUrl);
 		tsb.append("Blog", blogUrl);
-		tsb.append("ICQ", icq);
 						
 		return tsb.toString();
 	}
 
-	private StandardToStringStyle toStringStyle() {
+
+	private ToStringStyle toStringStyle() {
 		StandardToStringStyle toStringStyle = new StandardToStringStyle();
 		toStringStyle.setFieldSeparator("\n");
 		toStringStyle.setFieldNameValueSeparator(": ");
 		toStringStyle.setContentStart("");
 		toStringStyle.setContentEnd("");
+		toStringStyle.setUseClassName(false);
+		toStringStyle.setUseIdentityHashCode(false);
 		return toStringStyle;
 	}
-	
 }

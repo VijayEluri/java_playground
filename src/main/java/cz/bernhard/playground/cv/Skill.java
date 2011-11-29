@@ -11,6 +11,7 @@ public class Skill {
 
 	public static final String JAVASCRIPT = "Javascript";
 	public static final String JAVA = "Java";
+	public static final String GROOVY = "Groovy";
 	
 	private final String name;
 	private final Level level;
