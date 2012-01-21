@@ -7,6 +7,8 @@ import java.util.Date;
 
 public class Project {
 	
+	private static final DateFormat DATE_FORMATTER_INSTANCE = new SimpleDateFormat("dd.MM.yyyy");
+	
 	private String companyName;
 	private Date from;
 	private Date to = new Date(); /* NOW AS DEFAULT */
@@ -36,7 +38,7 @@ public class Project {
 
 	public Project startedAt(String from) {
 		try {
-			this.from = SimpleDateFormat.getDateInstance().parse(from);
+			this.from = DATE_FORMATTER_INSTANCE.parse(from);
 		} catch (ParseException e) {
 			throw new RuntimeException(e);
 		}
@@ -45,7 +47,7 @@ public class Project {
 
 	public Project andEndedAt(String to) {
 		try {
-			this.to = SimpleDateFormat.getDateInstance().parse(to);
+			this.to = DATE_FORMATTER_INSTANCE.parse(to);
 		} catch (ParseException e) {
 			throw new RuntimeException(e);
 		}
